@@ -1,3 +1,3 @@
 # glue-intro
 
-test data for investigating aws glue
+test data to explore aws glue features
