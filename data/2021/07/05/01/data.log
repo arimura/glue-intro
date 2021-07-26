@@ -1,5 +1,5 @@
 {"age": 20, "name":"Alice"}
 {"age": 21, "name":"Bob"}
-{"age": 22, "name":"Jon"}
+{"age": null, "name":"Jon"}
 {"age": 23, "name":"Michael"}
-{"age": 24, "name":"Tom"}
+{"age": null, "name":"Tom"}
