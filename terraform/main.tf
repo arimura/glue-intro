@@ -29,3 +29,16 @@ data "aws_iam_policy_document" "glue_policy_document" {
     effect    = "Allow"
   }
 }
+
+resource "aws_iam_policy" "glue_policy" {
+  name        = "glue-intro"
+  description = "Policy for glue intro"
+  policy      = data.aws_iam_policy_document.glue_policy_document.json
+}
+
+resource "aws_iam_role" "glue_role" {
+  name               = "AWSGlueServiceRole-intro"
+  description        = "Role for Glue intro"
+  path               = "/service-role/"
+  assume_role_policy = data.aws_iam_policy_document.glue_assume.json
+}
