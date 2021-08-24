@@ -18,6 +18,9 @@ sync-01:
 sync-02:
 	aws s3 sync data s3://$(BUCKET) --exclude '2021/07/05/01/*'
 
+sync-all:
+	aws s3 sync data s3://$(BUCKET)
+
 plan:
 	terraform -chdir=terraform plan
 
